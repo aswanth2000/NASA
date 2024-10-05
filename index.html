@@ -4,111 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Compelling Climate Change Story">
-    <title>Climate Change Story</title>
+    <title>Climate Change Story</title>  
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+    <div class="scroll_watcher"></div>
+    <nav id="navbar-mn" class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
-            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
-          </svg> Heal the World</span>
+            <span class="navbar-brand mb-0 h1">
+                <i class="fas fa-globe"></i> Climate Story
+            </span>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="#scrollspyHeading1">Introduction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="#scrollspyHeading2">Cause</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#scrollspyHeading3">Data Analysis</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#scrollspyHeading4">Conclusion</a>
+                </li>
+                <!-- <li class="nav-item dropdown" >
+                  <a class="nav-link dropdown-toggle" style="color: white;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                  </ul>
+                </li> -->
+              </ul>
         </div>
-      </nav>
-    <header>
-        <div class="header-content">
-            <div class="header-text">
+        
+    </nav>
+    
+    <header class="hero">
+        <div class="overlay">
+            <div class="container">
                 <h1>The Climate Crisis: A Call for Action</h1>
                 <p>Explore the data. Understand the impact. Make a difference.</p>
             </div>
-            <div class="header-image">
-                <img src="./img1.jpg" alt="Climate Crisis Image">
+        </div>
+        <div id="imageSlider" class="carousel slide" data-bs-ride="carousel slide" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image 1.jpg" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="image 2.jpg" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="image 3.jpg" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="image 4.jpg" class="d-block w-100" alt="Image 4">
+                </div>
             </div>
         </div>
     </header>
-    <div class="container climate-banner">
-        <div class="row">
-            <!-- Carbon Dioxide -->
+    <section id="scrollspyHeading1" class="Section1">
+    <!-- <div class="container my-5">
+        <div class="row text-center">
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="climate-stat">
-                    Carbon Dioxide
+                <div class="card climate-stat shadow carbon-dioxide-bg">
+                    <div class="card-body">
+                        <h5>Carbon-di-oxide</h5>
+                        <h3 class="climate-value"><span class="arrow-up">&#x2191;</span> 412</h3>
+                        <p>parts per million</p>
+                    </div>
                 </div>
-                <div class="climate-value">
-                    <span class="arrow-up">&#x2191;</span>412</div>
-                <div>parts per million</div>
             </div>
-
-            <!-- Global Temperature -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="climate-stat">
-                     Global Temperature
+                <div class="card climate-stat shadow global-temperature-bg">
+                    <div class="card-body">
+                        <h5>Global Temperature</h5>
+                        <h3 class="climate-value"><span class="arrow-up">&#x2191;</span> 1.9°F</h3>
+                        <p>since 1880</p>
+                    </div>
                 </div>
-                <div class="climate-value"><span class="arrow-up">&#x2191;</span>1.9°F</div>
-                <div>since 1880</div>
             </div>
-
-            <!-- Arctic Ice Minimum -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="climate-stat">
-                    Arctic Ice Minimum
-
+                <div class="card climate-stat shadow arctic-ice-bg">
+                    <div class="card-body">
+                        <h5>Arctic Ice Minimum</h5>
+                        <h3 class="climate-value"><span class="arrow-down">&#x2193;</span> 13%</h3>
+                        <p>percent per decade</p>
+                    </div>
                 </div>
-                <div class="climate-value"> <span class="arrow-down">&#x2193;</span>13%</div>
-                <div>percent per decade</div>
             </div>
-
-            <!-- Sea Level -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="climate-stat">
-                     Sea Level
+                <div class="card climate-stat shadow sea-level-bg">
+                    <div class="card-body">
+                        <h5>Sea Level</h5>
+                        <h3 class="climate-value"><span class="arrow-up">&#x2191;</span> 3.3</h3>
+                        <p>millimeters per year</p>
+                    </div>
                 </div>
-                <div class="climate-value"><span class="arrow-up">&#x2191;</span>3.3</div>
-                <div>millimeters per year</div>
+            </div>
+        </div>
+    </div> -->
+    
+   
+        <div class="content1">
+            <h1>What is Climate Change?</h1>
+            <p>Climate change refers to long-term changes in the average weather patterns and temperatures on Earth. 
+                It is primarily caused by human activities, particularly the burning of fossil fuels (like coal, oil, and natural gas), deforestation, and industrial processes, which release greenhouse gases such as carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O) into the atmosphere.</p>
+            <p>These gases trap heat from the sun, leading to the "greenhouse effect," which causes global temperatures to rise. This warming impacts weather patterns, sea levels, and ecosystems. Some of the consequences include:</p>
+            <ul class="straight-line-list">
+                <li>Global Warming: An increase in Earth's average surface temperature.</li>
+                <li>Melting ice caps and glaciers: Resulting in rising sea levels, which threaten coastal communities.</li>
+                <li>More extreme weather events: Such as stronger storms, heatwaves, droughts, and floods.</li>
+                <li>Changes in ecosystems and wildlife: Affecting species' habitats, migration patterns, and biodiversity.</li>
+                <li>Ocean acidification: As oceans absorb more CO2, their pH levels drop, harming marine life.</li>
+            </ul>
+        </div>
+
+        <div class="image-grid">
+            <div class="grid-item"><img src="flood.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="forestfire.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="drought.jpeg" alt="Image 3"></div>
+            <div class="grid-item"><img src="co2.jpg" alt="Image 4"></div>
+        </div>
+    </section>
+    <section id="scrollspyHeading2" class="Cause">
+        <div class="video-container">
+            <video autoplay muted loop id="backgroundVideo">
+                <source src="Climate Chnage Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+        <div class="text-overlay">
+            <div class="container">
+                <h1>The Cause</h1>
+                <p> Climate change is driven by both natural processes and human activities. Naturally, the Earth's climate has fluctuated over millennia due to factors like volcanic eruptions, which release gases and particles that can block sunlight, and variations in the sun's energy output. Ocean currents and changes in the Earth’s orbit  also play a role in these long-term shifts.
+                    However, the current rapid changes are largely due to human activities. The burning of fossil fuels (coal, oil, and gas), deforestation, and industrial processes release large amounts of greenhouse gases like carbon dioxide (CO2) into the atmosphere. These gases trap heat, causing global temperatures to rise. This human-induced warming is accelerating climate changes, such as more intense storms, rising sea levels, and shifts in ecosystems.</p>
+            </div>
+        </div>
+    </section>
+    <div id="scrollspyHeading3" class="chrt">
+        <section class="solution">
+            <div class="image-container" >
+                <img src="ghg-emissions.jpeg.jpg" id="ghg-img" alt="Total GHG Emissions" class="right-image">
+            </div>
+        <div class="text-container" id="text-pad-left" >
+            <h1>Total GHG Emissions</h1>
+            <p>The Beginning: A Quiet World (1850s - early 1900s)
+                In the mid-19th century, GHG emissions were close to zero as industries were just starting to grow. The atmosphere was relatively clean, with minimal pollution from human activities.
+                <br>Slow and Steady Growth (1900s - 1950s)
+                The early 20th century saw gradual industrialization, leading to a slow increase in GHG emissions. As factories, trains, and cars became more common, pollution levels began to rise.
+                <br>Post-War Boom: An Industrial Surge (1950s - 1975)
+                After World War II, industrial activities expanded rapidly, causing a steep rise in emissions. This period marked the shift to large-scale production and increased use of fossil fuels like oil.
+                <br>The Modern Era: A Skyrocketing Rise (1975 - 2000)
+                During the late 20th century, emissions skyrocketed as global industrialization and urbanization reached new heights. The rapid economic growth led to massive increases in GHG levels worldwide.
+                <br>Recent Years: A Persistent High (2000 - 2025)
+               In the 21st century, GHG emissions remain high despite global efforts to curb them. Small fluctuations reflect attempts to reduce emissions, but overall levels stay around 50 gigatons annually.
+    </section>
+    <section class="solution">
+                <div class="text-container">
+                    <h1>Global Greenhouse Emissions By Gas</h1>
+                    <p>Global greenhouse gas emissions are the primary drivers of climate change, resulting from human activities like burning fossil fuels (coal, oil, and gas), industrial processes, agriculture, and deforestation. These activities release large amounts of gases, particularly carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O), which trap heat in the Earth's atmosphere and create the "greenhouse effect." As emissions continue to rise, global temperatures increase, leading to more extreme weather events, rising sea levels, and disruptions in ecosystems. 
+                    Addressing these emissions requires a shift to cleaner energy, more efficient resource use, and sustainable practices across industries and agriculture. Reducing global emissions is key to limiting the harmful impacts of climate change.</p>
+                </div>
+                <div class="image-container">
+                    <img src="ghg-division.jpeg.jpg" alt="Global Greenhouse Emissions" class="right-image">
+                </div>
+            </section>
+               
+            <section class="solution">
+                <div class="text-container"  id="text-pad-right" >
+                    <h1>Global Surface Temperature</h1>
+                    <p>In the late 1800s, the global temperature was generally below the baseline, represented by the blue bars. Each year between 1880 and around the 1930s had temperatures that were cooler than this average, often by about 0.25°C or more. These blue bars reflect a cooler Earth, possibly because of natural climate cycles, volcanic eruptions, or lower levels of industrial activity.
+
+                        <br>As we move through the early 20th century, the temperatures slowly rise toward the baseline, meaning that the Earth’s surface was warming. By the 1980s, the bars start to change from blue to light red, which signals that the global temperatures were starting to go above the historical average.
+                        
+                        <br>Then, a dramatic change happens. From the 1980s to the 2020s, the bars become darker and darker shades of red, growing taller and indicating a sharp rise in global temperatures. By the 2000s, the warming trend accelerates even more, leading to the hottest temperatures recorded in this graph’s final years. The dark red bars represent an anomaly, where the temperature has risen by more than 1°C above the average from 1951-1980, a sign of rapid global warming.
+                        
+                        <br>This trend of rising temperatures in the recent decades aligns with the increase in greenhouse gas emissions, especially carbon dioxide, from human activities like burning fossil fuels and deforestation. The story in this graph is one of a rapidly warming planet, with a sharp shift toward higher temperatures that pose growing risks to ecosystems, weather patterns, and human societies worldwide.</p>
+                </div>
+                <div class="image-container">
+                    <img src="temp_bar3.jpeg.jpg" style="height: 80vh;width: 45vw;"  alt="Global Surface Temperature" class="right-image">
+                </div>
+            </section>
+            <section class="solution">
+                <div class="image-container" style="margin-top: 7%;height: 68vh;width: 45vw;">
+                    <img src="co2 emissions and temperature anomalies bar plot.jpeg.jpg" alt="Global Temperature Anomaly and Atmospheric CO2 Emissions Concentrarion" class="right-image">
+                </div>
+                <div class="text-container" id="text-pad-left">
+                    <h1>Global Temperature Anomaly and Atmospheric CO2 Emissions Concentrarion</h1>
+                    <p>In the 1960s and 1970s, the blue bars indicate that temperatures were generally cooler than the baseline, while CO₂ levels were around 320-340 parts per million (ppm). As CO₂ emissions rose, the temperature anomaly also began to increase slowly, with the bars shifting from blue to light red by the late 1980s.
+                        <br>Starting in the 1990s, the CO₂ line climbs rapidly past 360 ppm, and the temperature bars become darker red, showing accelerated global warming. The trend continues through the 2000s and 2010s, with CO₂ reaching over 400 ppm and temperatures rising sharply above the historical average.
+                        <br>By 2023, the CO₂ concentration exceeds 420 ppm, and global temperatures are about 1°C higher than the 1951-1980 average. This clear link between increasing CO₂ emissions and rising temperatures highlights the growing impact of human activities on climate change.
+                        <br>This image makes the relationship between rising CO₂ levels and increasing global temperatures unmistakably clear. As human activities like burning fossil fuels pump more CO₂ into the atmosphere, it acts like a blanket, trapping heat and driving the planet's temperature higher and higher. This visual story warns of the accelerating pace of climate change, with both CO₂ concentrations and global warming rising hand-in-hand over time.</p>
+                </div>
+                
+           
+    </section>
+</div>
+<section id="scrollspyHeading4" class="Section2">
+    <div class="content2 row">
+        
+        <h1>What is the Moral of the Story?</h1>
+        <span class="col-lg-8 col-md-6 mb-4">
+        <p>Have the policies that governments have implemented really worked? The short answer is, to some extent, and we need to do <span style="font-size: 2rem;">MORE!!! </span>The background image that you are seeing in this section is of Antarctica, and as you can see, the ice sheets are rapidly melting. This is one of the most visible signs of how our planet is responding to rising global temperatures, largely driven by greenhouse gas emissions, particularly CO₂.</p>
+        <p> As industries burn fossil fuels for energy, these gases accumulate, creating a heat-trapping "blanket" around the planet. This warming not only melts polar ice but also fuels extreme weather events, rising sea levels, and impacts ecosystems across the globe. Though some efforts have been made by governments to reduce emissions, the pace of climate change is still outstripping the actions taken, leaving us with an urgent need for more comprehensive solutions.</p>
+        </span>
+        
+        <p>To tackle this crisis, we must:</p>
+        <ul class="straight-line-list">
+            <li>Transition to renewable energy sources like wind, solar, and hydropower, reducing our dependence on fossil fuels.</li>
+            <li>Improve energy efficiency in industries, homes, and transportation, lowering overall emissions.</li>
+            <li>Invest in reforestation and carbon capture technologies to absorb CO₂ and help reverse some of the damage already done.</li>
+            <li>And lastly, we as a society must follow these green practices as the governments are only as good as its people</li>
+            <li>There is only One Planet for us. <span style="font-size: 2rem;">LET'S SAVE IT!</span></li>
+        </ul>
+    </div>
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card climate-stat shadow carbon-dioxide-bg">
+                    <div class="card-body">
+                        <h5>Carbon-di-oxide</h5>
+                        <h3 class="climate-value"><span class="arrow-up">&#x2191;</span> 412</h3>
+                        <p>parts per million</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card climate-stat shadow global-temperature-bg">
+                    <div class="card-body">
+                        <h5>Global Temperature</h5>
+                        <h3 class="climate-value"><span class="arrow-up">&#x2191;</span> 1.9°F</h3>
+                        <p>since 1880</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card climate-stat shadow arctic-ice-bg">
+                    <div class="card-body">
+                        <h5>Arctic Ice Minimum</h5>
+                        <h3 class="climate-value"><span class="arrow-down">&#x2193;</span> 13%</h3>
+                        <p>percent per decade</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card climate-stat shadow sea-level-bg">
+                    <div class="card-body">
+                        <h5>Sea Level</h5>
+                        <h3 class="climate-value"><span class="arrow-up">&#x2191;</span> 3.3</h3>
+                        <p>millimeters per year</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
-    <section class="introduction">
-        <h2>What is Climate Change?</h2>
-        <p>Climate change refers to long-term changes in the Earth’s climate, primarily caused by human activities, especially the burning of fossil fuels, which releases carbon dioxide and other greenhouse gases into the atmosphere.</p>
-    </section>
-
-    <section class="data-impact">
-        <h2>Global Temperature Rise</h2>
-        <div class="fact-box">
-            <p><strong>Fact:</strong> The Earth's average surface temperature has risen by about 1.2°C since the late 19th century.</p>
+    
+    <!-- <section class="call-to-action text-center py-5">
+        <div class="container">
+            <h2>What Can You Do?</h2>
+            <p>The fight against climate change begins with awareness and action. Here's what you can do:</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle"></i> Reduce your carbon footprint by driving less.</li>
+                <li><i class="fas fa-check-circle"></i> Switch to renewable energy sources.</li>
+                <li><i class="fas fa-check-circle"></i> Support sustainable policies and leaders.</li>
+            </ul>
         </div>
-        <img src="./global-temperature-rise.jpg" alt="Global Temperature Rise">
-        <p>Data from the US GHG Center shows a rapid increase in temperatures over the last century, contributing to the melting of ice sheets, rising sea levels, and more extreme weather patterns.</p>
-    </section>
+    </section> -->
 
-    <section class="phenomena">
-        <h2>Melting Ice Sheets</h2>
-        <div class="fact-box">
-            <p><strong>Fact:</strong> The Greenland and Antarctic ice sheets are losing mass at an accelerating rate.</p>
-        </div>
-        <img src="melting-ice.jpg" alt="Melting Ice Sheets">
-        <p>The rapid melting of polar ice sheets is a direct consequence of global warming, raising sea levels and threatening coastal communities worldwide.</p>
-    </section>
 
-    <section class="call-to-action">
-        <h2>What Can You Do?</h2>
-        <p>The fight against climate change begins with awareness and action. Here's what you can do:</p>
-        <ul>
-            <li>Reduce your carbon footprint by driving less and using public transport.</li>
-            <li>Switch to renewable energy sources such as solar and wind power.</li>
-            <li>Support policies and leaders focused on sustainability.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Join the movement and take a stand against climate change. It's time for action.</p>
-        <p>&copy; 2024 Climate Action Initiative</p>
-        
+    <footer class="text-white bg-dark py-3 text-center">
+        <p>Join the movement and take a stand against climate change. &copy; 2024 Climate Action Initiative</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+        // Automatic slide transition with added animation
+        const carousel = document.querySelector('#imageSlider');
+        
+        // Function to go to the next slide
+        function nextSlide() {
+            const carouselInstance = new bootstrap.Carousel(carousel);
+            carouselInstance.next();
+        }
+
+        // Automatically transition to the next slide every 3 seconds
+        setInterval(nextSlide, 3000);
+
+        // Optional: Enhance the hover effect on images
+        const carouselItems = document.querySelectorAll('.carousel-item img');
+
+        carouselItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'scale(1.05)';
+                item.style.transition = 'transform 0.5s ease';
+            });
+
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'scale(1)';
+                item.style.transition = 'transform 0.5s ease';
+            });
+        });
+    </script>
 </body>
 </html>
